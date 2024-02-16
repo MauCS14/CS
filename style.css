@@ -11,13 +11,62 @@ body {
   overflow-x: hidden;
   margin: 0; /* Reset default body margin */
 }
-
-.container1 {
-  height: 50px;
-  margin-bottom: 20px; /* Adjust margin as needed */
-  padding: 10px 10%;
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:rgba(5, 5, 5, 0.603);
+  padding: 10px 0;
+  width: 100%;
+  color: red; /* Change text color for visibility */
+  z-index: 1000;
+}
+.fa-regular {
+  margin-left: 30px;
+}
+.top p {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  margin-left: 10px; /* Set display to inline-block to allow the elements to appear next to each other */
+  line-height: 22px;
+}
+.top a {
+  color: #fff; /* Set the color to your preferred value */
+  text-decoration: none; /* Remove the underline */
+}
+.top p:hover{
+  color: #9c9c9c;
+}
+.top a:hover {
+  color: #9c9c9c; /* Set the hover color to your preferred value */
 }
 
+.social-top {
+  margin-left: 950px;
+  float: right;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-right: 30px;
+}
+.social-top a {
+  color: #fff; /* Set the color to your preferred value */
+  text-decoration: none; /* Remove the underline */
+}
+.social-top a:hover {
+  color: #9c9c9c; /* Set the hover color to your preferred value */
+}
+.social-top i {
+  margin-right: 10px; /* Adjust the spacing between social icons */
+}
+.container1 {
+  position: absolute; 
+  top: 60px; 
+  left: 0;
+  width: 100%;
+  height: 50px;
+  color: #fff; 
+}
 .wrapper {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   min-height: 100vh;
@@ -30,6 +79,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 100px;
 }
 nav {
   display: flex;
@@ -62,7 +112,7 @@ nav ul li a:hover {
 
 .header-text h1 {
 	font-size: 50px;
-	margin-top: 50px; /* Corrected property name to margin-top */
+	margin-top: 50px; 
 }
 
 .header-text h1 span {
@@ -93,8 +143,8 @@ nav ul li a:hover {
 }
  
 .card img{
-  height: 100%;
-  width:100%;
+  height: 450px;
+  width: 400px;
   box-shadow: 0 0 20px #333;
   object-fit: cover;
 }
@@ -104,32 +154,27 @@ nav ul li a:hover {
   transition: 0.3s;
   filter: drop-shadow(0 0 10px #333);
 }
-
-
-.card:hover img {
-  filter: grayscale(35%);
-}
-
 .card figcaption{
   position: absolute;
-  bottom: 0;
+  bottom: 10px; /* Adjusted position */
   left: 0;
-  padding: 25px;
-  width: 100%;
-  height: 20%;
-  font-size: 16px;
+  padding: 15px; /* Adjusted padding */
+  width: 100%; /* Adjusted width */
+  font-size: 14px; /* Adjusted font size */
   font-weight: 500;
   color: #fff;
-  opacity: 0;
-  border-radius: 0 0 10px 10px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-  transition: 0.3s;
+  text-align: center; /* Centered text */
+  background: rgba(0, 0, 0, 0.7); /* Darkened background for better contrast */
+  box-sizing: border-box; /* Added box-sizing for consistent sizing */
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+  margin-right: 10px; /* Added margin from the right side */
+  text-transform:capitalize;
 }
+span{
 
-.card:hover figcaption {
-  opacity: 1;
-  transform: scale(1.03);
-}  
+  font-size: 16px;
+  text-transform: capitalize;
+}
 
 .copyright {
   text-align: center;
