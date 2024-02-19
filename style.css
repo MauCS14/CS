@@ -219,4 +219,7 @@ span{
     margin-bottom: 10px;
     margin-right: 2%;
   }
+ .card img {
+  width:225px; 
+  heigh:200px;
 }
